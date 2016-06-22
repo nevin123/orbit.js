@@ -1,26 +1,31 @@
-## Synopsis
+## Orbit.js
 
-At the top of the file there should be a short introduction and or overview that explains what the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+Orbit.js is a simple library that makes html elements orbit on a specific location on your website.
+It is even possible to make elements orbit around other elements.
 
 ## Code Example
 
 Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
-
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+Installing the library into your website is simple. 
+You could add the orbit.js file to your website and use this code:
 
-## API Reference
+'''html
+<script src="/path/to/orbit.js"></script>
+'''
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+Or you could simple add this code:
 
-## Tests
+'''html
+<script src="http://nevinwouters.com/fhict/orbitjs/orbit.js"></script>
+'''
 
-Describe and show how to run the tests with code examples.
+## Demo
+
+You can watch a simple example here:
+[nevinwouters.com/fhict/orbitjs/index.html](http://nevinwouters.com/fhict/orbitjs/);
 
 ## Contributors
 
