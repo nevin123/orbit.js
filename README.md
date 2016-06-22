@@ -5,7 +5,44 @@ It is even possible to make elements orbit around other elements.
 
 ## Code Example
 
-Show what the library does as concisely as possible, developers should be able to figure out how your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+There are different function that can be used while using this library.
+
+You start by selecting the element, this is done the same like JQuery. For example:
+```javascript
+orbit('#element');
+orbit('.element');
+orbit('#element .element');
+```
+You can change the orbit location with the code below. As input you can use pixels or percentage
+```javascript
+orbit('#element').setCenter('50%',250px);
+```
+
+You can also set the radius or the rotation in pixels and the speed in seconds (for 360deg). The values for radius and speed can also be negative values.
+```javascript
+orbit('#element').setRadius(200).setSpeed(-5);
+```
+
+You can also set the parent instead of the position, this makes the element always orbit around that element
+```javascript
+orbit('#element').setParent("#otherElement");
+```
+
+To start or stop the orbit you can use this:
+```javascript
+orbit('#element').startOrbit();
+orbit('#element').startOrbit();
+```
+
+So in the end you can get something like this:
+
+```javascript
+	orbit('#first').setCenter('50%','50%').setRadius(200).setSpeed(5).startOrbit();
+	orbit('#second').setRadius(150).setSpeed(-7).setParent("#first").startOrbit();
+	orbit('#third').setRadius(100).setSpeed(8).setParent("#second").startOrbit();
+	orbit('#fourth').setRadius(80).setSpeed(-5).setParent("#second").startOrbit();
+	orbit('#fifth').setRadius(60).setSpeed(1).setParent("#second").startOrbit();
+```
 
 ## Installation
 
@@ -25,12 +62,17 @@ Or you could simple add this code:
 ## Demo
 
 You can watch a simple example here:
-[nevinwouters.com/fhict/orbitjs/index.html](http://nevinwouters.com/fhict/orbitjs/);
+[nevinwouters.com/fhict/orbitjs/index.html](http://nevinwouters.com/fhict/orbitjs/)
 
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+This is accomplished by following code:
+```html
+<script>
+	window.onload = function() {
+		orbit('#first').setCenter('50%','50%').setRadius(200).setSpeed(5).startOrbit();
+		orbit('#second').setRadius(150).setSpeed(-7).setParent("#first").startOrbit();
+		orbit('#third').setRadius(100).setSpeed(8).setParent("#second").startOrbit();
+		orbit('#fourth').setRadius(80).setSpeed(-5).setParent("#second").startOrbit();
+		orbit('#fifth').setRadius(60).setSpeed(1).setParent("#second").startOrbit();
+	}
+</script>
+```
