@@ -12,15 +12,15 @@ Show what the library does as concisely as possible, developers should be able t
 Installing the library into your website is simple. 
 You could add the orbit.js file to your website and use this code:
 
-'''html
+```html
 <script src="/path/to/orbit.js"></script>
-'''
+```
 
 Or you could simple add this code:
 
-'''html
+```html
 <script src="http://nevinwouters.com/fhict/orbitjs/orbit.js"></script>
-'''
+```
 
 ## Demo
 
