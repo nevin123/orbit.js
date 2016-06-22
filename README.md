@@ -15,7 +15,7 @@ orbit('#element .element');
 ```
 You can change the orbit location with the code below. As input you can use pixels or percentage
 ```javascript
-orbit('#element').setCenter('50%',250px);
+orbit('#element').setCenter('50%','250px');
 ```
 
 You can also set the radius or the rotation in pixels and the speed in seconds (for 360deg). The values for radius and speed can also be negative values.
